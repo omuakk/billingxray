@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Welcome to Billing X-Ray
+{% endblock %}
+
+{% block main %}
+
+    
+    <p> Welcome Dr. {{ provname[0][0] }} {{ provname[0][1] }} {{ provname[0][2]}}</p>
+    <p>Below is the allowed amount for Medicare claims in your name from 2012 to 2017. </p>
+  
+    <table class="table table-hover table-sm">
+        
+        <thead> 
+        <tr>
+        <th> CPT Code</th>
+        {% for y in range(years|length) %}
+        <th> {{ years[y] }} </th>
+        {% endfor %}
+        </tr>
+        </thead>
+        
+        <tbody>
+        {% for i in range(total_amt_detail|length) %}
+        <tr>
+            <td> {{ cptdesclist[i][0] }} </td>
+            {% for j in range(total_amt_detail[i]|length) %}
+            <td> {{ "{:,.0f}".format(total_amt_detail[i][j]) }} </td>
+            {% endfor %}    
+        </tr>
+        {% endfor %}
+        
+        <tr>
+            
+            <td><B>Total</B></td>
+            {% for t in range(total_amt_row|length) %}
+            <td><b>
+            {{ "${:,.0f}".format(total_amt_row[t])}} 
+            </b></td>
+            
+            {% endfor %}
+        </tr>
+        
+        </tbody>
+    </table>
+    
+    
+    <p> </p>
+    <p> </p>
+    <p> </p>
+    
+    <p><b>Key for CPT Codes</b></p>
+    <div class="col" style="line-height: 0.5">
+    <table class="table" table-hover table-sm table-borderless>
+        {% for c in range(cptdesclist|length) %}
+        <tr>
+            <td> {{ cptdesclist[c][0] }} </td>
+            <td> {{ cptdesclist[c][1] }} </td>
+        </tr>
+        {% endfor %}
+    </table>
+    </div>
+ 
+    
+    <p></p><p></p>
+    <a href = "/">
+    Go back to search
+    </a>
+    
+    
+{% endblock %}

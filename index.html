@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/main.css">
+  
+    </head>
+ 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <body>
+        <section class="bg-dark text-center">
+            <div class="container">
+               <div class="row justify-content-md-center">
+                    <h1 style="color: #00FF00;">Billing X-Ray</h1>
+                </div>          
+            </div>
+        </section>
+         <form action="/submitnpi" method="post">
+            <div class="container">
+                <p> </p>
+                <div class="d-flex">
+                    <input class="form-control mr-1" name="npi" placeholder="Enter NPI Number e.g. 1578671483" >
+                    <button class="btn btn-primary">Go</button>
+                </div>
+            </div>
+            <div class="container">
+                <p> </p>
+                <p></p>
+                <footer>   
+                <p> Thanks for visiting Billing X-Ray. A few things before getting started:</p>
+               <ul> 
+                   <li> <b> If you don't know your NPI number, you can easily look it up on <a href = "http://www.google.com" target="_blank"> Google</a> by typing your name and "NPI". </b></li>
+                   <li> This is a service provided for free and is for informational purposes only. This service has been tested for accuracy but errors are possible. </li>
+                   <li> Huge thanks to the U.S. Centers for Medicare and Medicaid Services (CMS) who have made these data publicly available. We have taken the last step to make the data easily accessible for busy physicians.</li>
+                   <li> If you have concerns about the data please look up the data in queston on the <a href="https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Physician-and-Other-Supplier.html" target="_blank"> CMS Data Service</a> and let me know if there is a discrepancy.</li>
+                   <li> Feel free to drop a note to <a href="mailto:billingxray@gmail.com"> billingxray@gmail.com </a> for any questions, data discrepancies, concerns or feedback, would love to hear from you!! </li>
+               
+            </div>
+        </form>
+    
+    </body>  
+   
+    
+</html>
+    

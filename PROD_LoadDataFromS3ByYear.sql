@@ -1,0 +1,1 @@
+LOAD DATA FROM S3 's3://dollarxray-medicare/Medicare_Provider_Util_Payment_PUF_CY2017.txt' INTO TABLE medicare_data_xray_2017 FIELDS TERMINATED BY '\t' IGNORE 1 LINES;

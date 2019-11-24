@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    NPI Error
+{% endblock %}
+
+{% block main %}
+
+    
+    <h1> Sorry, it looks like that NPI number is not in the database. </h1>
+    <p> Please note that only data from 2012 to 2017 is available, so if you are a newly practicing physician, you may not be in the database yet. </p>
+    <p> If you think you should have claims in 2012-2017, please take a look at <a href="https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Physician-and-Other-Supplier.html" target="_blank"> CMS Data Service</a> and let me know if you're finding data there that isn't reflected here.</p>
+    
+    <h2> <a href = "/"> Click here to go back to search. </a></h2>
+  
+{% endblock %}
