@@ -21,7 +21,7 @@ def submitnpi():
     mydb = mysql.connector.connect(
     host="databaseinstanceprod.cnxrcmkisyr9.us-east-2.rds.amazonaws.com",
     user="omuakkas",
-    passwd="B!llingXray123"
+    passwd=HIDDEN
     )
     mycursor = mydb.cursor()
 
