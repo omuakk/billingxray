@@ -2,8 +2,8 @@ I am thrilled to submit my Final Project for CS50: Billing X-Ray.
 Note that the site is live at www.billingxray.com !!
 
 File orientation:
-1. SQL Files beginning "with PROD_" restructure the data from the CMS files (see link at the bottom)
-2. application.py is the Python script using the Flask framework that runs the website
+<b> 1. application.py is the Python script using the Flask framework that runs the website </b>
+2. SQL Files beginning "with PROD_" restructure the data from the CMS files (see link at the bottom)
 3. index.html is the main page
 4. layout.html controls the layout
 5. results.html generates the resulting data for the physician to view his or her claims
